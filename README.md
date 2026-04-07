@@ -1,7 +1,7 @@
 [![StepSecurity Maintained Action](https://raw.githubusercontent.com/step-security/maintained-actions-assets/main/assets/maintained-action-banner.png)](https://docs.stepsecurity.io/actions/stepsecurity-maintained-actions)
 
 # Create Comment
-[![CI](https://github.com/KeisukeYamashita/create-comment/workflows/build-test/badge.svg)](https://github.com/KeisukeYamashita/create-comment/actions?query=workflow%3Abuild-test)
+[![CI](https://github.com/step-security/create-comment/workflows/build-test/badge.svg)](https://github.com/step-security/create-comment/actions?query=workflow%3Abuild-test)
 
 A GitHub Action that post comment on a GitHub Issue or Pull Request.
 If the same content is posted before, this action will delete the existing one and post a new one.

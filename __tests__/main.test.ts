@@ -4,7 +4,7 @@ let defaultInputs: Inputs = {
   comment: 'Test',
   number: 1,
   checkOnlyFirstLine: false,
-  repository: 'KeisukeYamashita/repost-comment',
+  repository: 'step-security/repost-comment',
   token: 'test-token',
   unique: true
 }
