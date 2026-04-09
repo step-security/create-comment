@@ -1,0 +1,32 @@
+name: 'create-comment'
+description: 'A GitHub Action that post comment on a GitHub Issue or Pull Request'
+author: 'step-security'
+inputs:
+  check-only-first-line:
+    required: false
+    description: 'If the first line is same, it is considered to be the same post'
+    default: 'false'
+  comment:
+    required: true
+    description: 'Comment to post'
+  unique:
+    required: false
+    description: 'Delete existing comment with same body or not'
+    default: 'true'
+  number:
+    required: false
+    description: 'The number of the issue or pr to post'
+  repository:
+    required: false
+    description: 'The GitHub repository containing the issue or pr.'
+    default: ${{ github.repository }}
+  token:
+    required: false
+    description: 'Credential to access to the repo to post the comment'
+    default: ${{ github.token }}
+runs:
+  using: 'node24'
+  main: 'dist/index.js'
+branding:
+    icon: 'book-open'
+    color: 'gray-dark'
